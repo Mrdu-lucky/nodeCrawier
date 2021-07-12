@@ -1,7 +1,7 @@
 import koa from "koa";
 import Router from "koa-router";
 import cheerio from "cheerio";
-import createMdodel from "../db/mongoConnect"
+// import createMdodel from "../db/mongoConnect"
 // import superagent from "superagent-charset";
 import superagent from "superagent";
 require('superagent-charset')(superagent)
@@ -81,7 +81,7 @@ const getPlayList = ({ url }) => {
                     list: arr,
                     type:1 
                 }
-                createMdodel(playModelData);
+                // createMdodel(playModelData);
 
             })
         })
