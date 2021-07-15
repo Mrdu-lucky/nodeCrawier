@@ -1,6 +1,6 @@
 import koa from "koa";
-import cheerio from "cheerio";
 import myRouter from '../routes/routers'
+import Router from "koa-router";
 // import createMdodel from "../db/mongoConnect"
 // import superagent from "superagent-charset";
 import superagent from "superagent";
@@ -10,7 +10,6 @@ let arr = [];
 const app = new koa();
 let playUrlList = [];
 let playDataId = "";
-
 const filderRightUrlRes = /https:\/\/pan\.jiningwanjun\.com\/v\/(\w+)/g;
 const getIdres = /.*\?(\d+)-.*/;
 
